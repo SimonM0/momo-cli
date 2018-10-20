@@ -1,6 +1,6 @@
 {
   "name": "momo-cli-generators",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of functions that generate templates",
   "main": "index.js",
   "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
@@ -12,6 +12,6 @@
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "momo-cli-jest-setup": "^0.0.1"
+    "momo-cli-jest-setup": "^0.0.2"
   }
 }
