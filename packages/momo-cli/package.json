@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/Fried-Chicken/momo#readme",
   "dependencies": {
-    "momo-cli-generators": "1.0.0",
     "colors": "^1.3.2",
     "inquirer": "^6.2.0",
-    "mkdirp": "^0.5.1"
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1",
+    "momo-cli-generators": "1.0.0"
   }
 }

@@ -4,5 +4,11 @@
   "description": "A set of functions that generate templates",
   "main": "index.js",
   "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "inquirer": "^6.2.0",
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1"
+  }
 }
