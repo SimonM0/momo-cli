@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "bin": {
+    "momo": "./src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fried-Chicken/momo.git"
