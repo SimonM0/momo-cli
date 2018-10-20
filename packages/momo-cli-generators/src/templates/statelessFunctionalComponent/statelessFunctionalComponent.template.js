@@ -1,6 +1,6 @@
 const statelessFunctionalComponentTemplate = functionName =>
   `import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
 
 /**
  * A description explaining what we use this component for

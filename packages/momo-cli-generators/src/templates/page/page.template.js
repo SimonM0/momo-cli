@@ -1,4 +1,4 @@
-const classComponentTemplate = functionName =>
+const pageTemplate = functionName =>
   `import * as React from 'react';
 import * as PropTypes from 'prop-types';
 
@@ -6,7 +6,7 @@ import * as PropTypes from 'prop-types';
  * A description explaining what we use this component for
  *
  * @param {*} props - a descriptions of what props is
- * @returns {*} a React Class Component
+ * @returns {*} a React Class Page Component
  */
 export class ${functionName} extends React.Component {
   constructor(props) {
@@ -35,4 +35,4 @@ ${functionName}.defaultProps = {
 };
 `;
 
-module.exports = classComponentTemplate;
+module.exports = pageTemplate;
