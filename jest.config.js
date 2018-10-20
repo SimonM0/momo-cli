@@ -1,13 +1,7 @@
 module.exports = {
   silent: true,
-  testRegex: 'packages/.*.test.js',
-  testPathIgnorePatterns: [
-    '<rootDir>/node_modules/',
+  testRegex: 'RUN TESTS AS PROJECTS',
+  projects: [
+    'packages/*',
   ],
-  setupFiles: [
-    './jest/enzymeSetup.js',
-  ],
-  transform: {
-    '^.+\\.js$': 'babel-jest',
-  },
 };

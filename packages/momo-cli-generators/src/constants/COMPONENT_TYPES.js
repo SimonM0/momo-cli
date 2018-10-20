@@ -3,9 +3,9 @@
  */
 const COMPONENT_TYPES = {
   SFC: 'Stateless Functional Component',
-  CLASS: 'Class',
+  CLASS: 'Class Component',
   HOC: 'Higher Order Component',
-  PURE: 'Pure',
+  PURE: 'Pure Component',
   PAGE: 'Page',
   SCREEN: 'Screen',
 };

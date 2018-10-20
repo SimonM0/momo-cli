@@ -1,0 +1,11 @@
+{
+  "name": "momo-cli-jest-setup",
+  "version": "1.0.0",
+  "description": "Jest setup for momo-cli",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
+  "license": "MIT"
+}
