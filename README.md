@@ -3,6 +3,8 @@
 ## Description
 This is a cli tool that I wrote to help generate a consistent structure when developing. This tool will allow you to generate functions with tests and an index.js file to export the function from the generated folder.
 
+![Example](./docs/example.gif)
+
 ## Installation
 ```
 $ npm i -g momo-cli
