@@ -6,4 +6,5 @@ const colors = require('./themes/colors');
 console.log(colors.rainbow(`MoMo CLI v${Package.version}`));
 console.log(colors.green('=================================================='));
 
+// TODO: Pickup .momorc
 functionGenerator();
