@@ -2,9 +2,9 @@ const inquirer = require('inquirer');
 const get = require('lodash/get');
 const colors = require('colors');
 const { FUNCTION_TYPES, FUNCTION_CHOICES } = require('../../constants');
-const { plainFunctionGenerator } = require('../../generators');
+const { functionGenerator } = require('../../generators');
 
-const functionGenerator = () => {
+const createFunction = () => {
   inquirer.prompt([
     {
       type: 'input',
@@ -24,9 +24,9 @@ const functionGenerator = () => {
 
     switch (get(answers, 'functionType')) {
       case FUNCTION_TYPES.PLAIN_FUNCTION:
-        return plainFunctionGenerator(answers);
+        return functionGenerator(answers);
       default:
-        return plainFunctionGenerator(answers);
+        return functionGenerator(answers);
     }
   }).catch((error) => {
     console.error(colors.red(error.message));
@@ -34,4 +34,4 @@ const functionGenerator = () => {
   });
 };
 
-module.exports = functionGenerator;
+module.exports = createFunction;

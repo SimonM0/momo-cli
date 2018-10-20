@@ -1,3 +1,1 @@
-const functionGenerator = require('./src/commands/functionGenerator');
-
-module.exports = functionGenerator;
+module.exports = require('./src/commands/createFunction');

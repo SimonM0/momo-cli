@@ -1,5 +1,5 @@
-const plainFunctionGenerator = require('./plainFunctionGenerator');
+const functionGenerator = require('./functionGenerator');
 
 module.exports = {
-  plainFunctionGenerator,
+  functionGenerator,
 };

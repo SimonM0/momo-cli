@@ -1,0 +1,1 @@
+export { convertFunctionTypeName } from './convertFunctionTypeName';

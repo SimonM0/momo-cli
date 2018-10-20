@@ -1,10 +1,6 @@
 const { FUNCTION_TYPES } = require('../constants');
+const plainFunctionTemplates = require('./plainFunction');
 
 module.exports = {
-  indexTemplates: {
-    [FUNCTION_TYPES.PLAIN_FUNCTION]: functionName => (
-      `export { ${functionName} } from './${functionName}';
-`
-    ),
-  },
+  [FUNCTION_TYPES.PLAIN_FUNCTION]: plainFunctionTemplates,
 };
