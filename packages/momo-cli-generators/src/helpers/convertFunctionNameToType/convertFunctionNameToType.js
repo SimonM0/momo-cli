@@ -1,4 +1,4 @@
-const { FUNCTION_TYPES } = require('../../constants');
+const { FUNCTION_TYPES, COMPONENT_TYPES } = require('../../constants');
 const capitaliseWord = require('../capitaliseWord');
 
 /**
@@ -20,7 +20,16 @@ const convertFunctionNameToType = ({ functionName, functionType }) => {
     case FUNCTION_TYPES.CONTAINER:
       return `${capitaliseWord(functionName)}${functionType}`;
     case FUNCTION_TYPES.COMPONENT:
+    case COMPONENT_TYPES.PURE:
+    case COMPONENT_TYPES.CLASS:
+    case COMPONENT_TYPES.SFC:
       return capitaliseWord(functionName);
+    case COMPONENT_TYPES.HOC:
+      return `with${capitaliseWord(functionName)}HOC`;
+    case COMPONENT_TYPES.PAGE:
+      return `${functionName}Page`;
+    case COMPONENT_TYPES.SCREEN:
+      return `${functionName}Screen`;
     default:
       return functionName;
   }

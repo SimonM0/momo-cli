@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const get = require('lodash/get');
 const colors = require('colors');
 const { FUNCTION_TYPES, FUNCTION_CHOICES } = require('../../constants');
-const { functionGenerator } = require('../../generators');
+const { functionGenerator, componentFunctionGenerator } = require('../../generators');
 
 const createFunction = () => {
   inquirer.prompt([
@@ -22,7 +22,12 @@ const createFunction = () => {
       throw new Error('\nERROR: No function name provided for the function');
     }
 
-    return functionGenerator(answers);
+    switch (answers.functionType) {
+      case FUNCTION_TYPES.COMPONENT:
+        return componentFunctionGenerator(answers);
+      default:
+        return functionGenerator(answers);
+    }
   }).catch((error) => {
     console.error(colors.red(error.message));
     process.exit(1);

@@ -4,10 +4,10 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
   ],
+  setupFiles: [
+    './jest/enzymeSetup.js',
+  ],
   transform: {
     '^.+\\.js$': 'babel-jest',
   },
-  projects: [
-    'packages/*',
-  ],
 };
