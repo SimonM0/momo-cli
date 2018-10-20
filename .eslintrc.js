@@ -8,7 +8,7 @@ module.exports = {
       'error',
       {
         'code': 80,
-        'ignorePattern': '',
+        'ignorePattern': 'require',
       },
     ],
   },

@@ -22,12 +22,7 @@ const createFunction = () => {
       throw new Error('\nERROR: No function name provided for the function');
     }
 
-    switch (get(answers, 'functionType')) {
-      case FUNCTION_TYPES.PLAIN_FUNCTION:
-        return functionGenerator(answers);
-      default:
-        return functionGenerator(answers);
-    }
+    return functionGenerator(answers);
   }).catch((error) => {
     console.error(colors.red(error.message));
     process.exit(1);

@@ -1,3 +1,5 @@
+const capitaliseWord = require('../capitaliseWord');
+
 /**
  * Use this function to convert function names into template file names for
  * selecting the correct template. This function converts 'Plain Function' into
@@ -17,14 +19,7 @@ const convertFunctionTypeName = (functionType) => {
         if (index === 0) {
           return word.toLowerCase();
         }
-        const capitalizedWord = `${
-          word.charAt(0)
-            .toUpperCase()
-        }${
-          word.substr(1)
-            .toLowerCase()
-        }`;
-        return [name, capitalizedWord].join('');
+        return [name, capitaliseWord(word)].join('');
       },
       '',
     );

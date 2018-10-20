@@ -1,13 +1,13 @@
 const makeDirectories = require('../../helpers/makeDirectories');
 const saveFiles = require('../../helpers/saveFiles');
 const getTemplate = require('../../helpers/getTemplate');
-const convertFunctionTypeName = require(
-  '../../helpers/convertFunctionTypeName',
-);
+const convertFunctionNameToType = require('../../helpers/convertFunctionNameToType');
+const convertFunctionTypeName = require('../../helpers/convertFunctionTypeName');
 
 const functionGenerator = (answers) => {
   try {
-    const { functionName, functionType, extension = 'js' } = answers;
+    const { functionType, extension = 'js' } = answers;
+    const functionName = convertFunctionNameToType(answers);
     const directories = [
       `./${functionName}/__tests__`,
     ];

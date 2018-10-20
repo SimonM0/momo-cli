@@ -1,1 +1,1 @@
-export { convertFunctionTypeName } from './convertFunctionTypeName';
+module.exports = require('./convertFunctionTypeName');
