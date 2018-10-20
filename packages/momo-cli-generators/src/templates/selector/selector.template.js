@@ -1,7 +1,7 @@
 const { FUNCTION_TYPES } = require('../../constants');
 const capitaliseWord = require('../../helpers/capitaliseWord');
 
-const selectorTemplate = functionName => {
+const selectorTemplate = (functionName) => {
   const functionNameWithoutType = functionName
     .replace(FUNCTION_TYPES.SELECTOR, '');
   const capitalisedFunctionName = capitaliseWord(functionNameWithoutType);
