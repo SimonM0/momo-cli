@@ -1,0 +1,30 @@
+{
+  "name": "momo-cli",
+  "version": "1.0.0",
+  "description": "Use this cli tool to generate a simple structure for functions",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fried-Chicken/momo.git"
+  },
+  "keywords": [
+    "cli",
+    "function",
+    "generator"
+  ],
+  "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fried-Chicken/momo/issues"
+  },
+  "homepage": "https://github.com/Fried-Chicken/momo#readme",
+  "dependencies": {
+    "momo-cli-generators": "1.0.0",
+    "colors": "^1.3.2",
+    "inquirer": "^6.2.0",
+    "mkdirp": "^0.5.1"
+  }
+}

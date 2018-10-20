@@ -1,0 +1,8 @@
+{
+  "name": "momo-cli-generators",
+  "version": "1.0.0",
+  "description": "A set of functions that generate templates",
+  "main": "index.js",
+  "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
+  "license": "MIT"
+}
