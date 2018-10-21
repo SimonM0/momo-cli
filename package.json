@@ -31,5 +31,7 @@
     "babel-eslint": "^10.0.1",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2"
-  }
+  },
+  "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
+  "license": "MIT"
 }
