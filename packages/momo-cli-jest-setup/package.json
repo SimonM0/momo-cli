@@ -1,6 +1,6 @@
 {
   "name": "momo-cli-jest-setup",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Jest setup for momo-cli",
   "main": "jest.config.js",
   "scripts": {
@@ -9,9 +9,9 @@
   "author": "Fried-Chicken <Fried-Chicken@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "jest": "^23.6.0",
     "babel-jest": "^23.6.0",
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.6.0"
   }
 }
