@@ -29,7 +29,7 @@ export const ${functionName} = createSelector(
   ${capitalisedFunctionName} => ${capitalisedFunctionName},
 );
 `
-);
+  );
 };
 
 module.exports = selectorTemplate;

@@ -2,7 +2,8 @@
   "name": "momo-cli-monorepo",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint packages"
   },
   "dependencies": {
     "babel-core": "^6.26.3",

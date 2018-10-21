@@ -1,4 +1,4 @@
-const higherOrderComponentTemplate = functionName => {
+const higherOrderComponentTemplate = (functionName) => {
   const hocName = functionName.replace('with', '');
   return (
     `import * as React from 'react';
@@ -41,6 +41,6 @@ export const ${functionName} = (WrappedComponent) => {
 };
 `
   );
-}
+};
 
 module.exports = higherOrderComponentTemplate;

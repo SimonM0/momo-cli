@@ -33,7 +33,6 @@ describe('convertFunctionNameToType', () => {
       .toEqual(result);
   });
   it('should user function name for plain functions', () => {
-
     const mockAnswers = {
       functionName: 'incrementCounter',
       functionType: FUNCTION_TYPES.PLAIN_FUNCTION,

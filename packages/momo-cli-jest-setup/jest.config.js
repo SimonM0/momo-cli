@@ -5,6 +5,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
   ],
+  testURL: 'http://localhost/',
   setupFiles: [
     'momo-cli-jest-setup/src/enzymeSetup.js',
   ],
