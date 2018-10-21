@@ -27,7 +27,7 @@ Because I wrote this tool for my own projects, this tool may generate some templ
 * [reselect](https://github.com/reduxjs/reselect)
 * [lodash](https://github.com/lodash/lodash)
 
-It's not the end of the world, the user can always modify the generated files. But if you want you can contribute a feature where the tool will pickup template files from the root directory of the project where the user has ran the cli in and also add a `.momorc` file for easily editing settings then that would be sooooo coooooooooool!!! 😎
+It's not the end of the world, the user can always modify the generated files. But if you want you can contribute a feature where the tool will pickup template files from the root directory of the project where the user has ran the cli in and also add a `.momorc` file for easily editing settings then that would be sooooo coooooooooool!!! 😎I'd be very greatful and you'd be famous!
 
 ## Installation
 ```
