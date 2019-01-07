@@ -10,6 +10,7 @@ const pureComponent = require('./pureComponent');
 const page = require('./page');
 const screen = require('./screen');
 const higherOrderComponent = require('./higherOrderComponent');
+const helperTemplates = require('./helper');
 
 module.exports = {
   [FUNCTION_TYPES.ACTION]: actionTemplates,
@@ -17,6 +18,7 @@ module.exports = {
   [FUNCTION_TYPES.SELECTOR]: selectorTemplates,
   [FUNCTION_TYPES.REDUCER]: reducerTemplates,
   [FUNCTION_TYPES.CONTAINER]: containerTemplates,
+  [FUNCTION_TYPES.HELPER]: helperTemplates,
   [COMPONENT_TYPES.SFC]: statelessFunctionalComponent,
   [COMPONENT_TYPES.CLASS]: classComponent,
   [COMPONENT_TYPES.PURE]: pureComponent,
