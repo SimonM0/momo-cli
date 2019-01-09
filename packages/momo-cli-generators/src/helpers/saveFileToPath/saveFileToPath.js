@@ -3,7 +3,7 @@ const path = require('path');
 
 const saveFileToPath = (pathName, template) => {
   const fullPath = path.resolve(
-    process.cwd(),
+    '.',
     pathName,
   );
 

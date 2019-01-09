@@ -2,6 +2,7 @@
 ![Issues](https://img.shields.io/github/issues/Fried-Chicken/momo-cli.svg)
 ![License](https://img.shields.io/github/license/Fried-Chicken/momo-cli.svg)
 ![Stars](https://img.shields.io/github/stars/Fried-Chicken/momo-cli.svg)
+![Forks](https://img.shields.io/github/forks/Fried-Chicken/momo-cli.svg)
 # momo-cli 
 
 ## Description
@@ -37,7 +38,12 @@ It's not the end of the world, the user can always modify the generated files. B
 ```
 $ npm i -g momo-cli
 ```
-**note:** This package must be installed globally.
+**note:** This package must be installed globally if you want to generate functions in other folders beside the root of your project.
+
+If you don't want to install globally and you don't want to install it in your project either, you can use the `npx` command but bear in mind this will take a little longer to startup.
+```
+$ npx momo-cli
+```
 
 ## Usage
 Navigate to your folder of choice and run the `momo` command and answer all the questions.
