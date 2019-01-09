@@ -29,7 +29,7 @@ const createFunction = () => {
         return functionGenerator(answers);
     }
   }).catch((error) => {
-    console.error(colors.red(error.message));
+    console.error(colors.red(`ERROR: ${error.message}`));
     process.exit(1);
   });
 };
