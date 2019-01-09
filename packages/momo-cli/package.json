@@ -1,6 +1,6 @@
 {
   "name": "momo-cli",
-  "version": "0.0.6",
+  "version": "0.0.7-alpha.0",
   "description": "Use this cli tool to generate a simple structure for functions",
   "main": "src/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "inquirer": "^6.2.0",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
-    "momo-cli-generators": "^0.0.6"
+    "momo-cli-generators": "^0.0.7-alpha.0"
   },
   "devDependencies": {
     "momo-cli-jest-setup": "^0.0.6"
