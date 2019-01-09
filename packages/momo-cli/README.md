@@ -1,4 +1,5 @@
 ![CircleCI](https://img.shields.io/circleci/project/github/Fried-Chicken/momo-cli/develop.svg)
+![Version](https://img.shields.io/badge/version-v0.0.6-blue.svg)
 ![Issues](https://img.shields.io/github/issues/Fried-Chicken/momo-cli.svg)
 ![License](https://img.shields.io/github/license/Fried-Chicken/momo-cli.svg)
 ![Stars](https://img.shields.io/github/stars/Fried-Chicken/momo-cli.svg)
