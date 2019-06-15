@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "lint": "eslint packages"
+    "lint": "eslint packages",
+    "start": "node ./packages/momo-cli"
   },
   "dependencies": {
     "enzyme": "^3.3.0",

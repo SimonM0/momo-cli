@@ -4,7 +4,7 @@ const capitaliseWord = require('../../helpers/capitaliseWord');
 const selectorTemplate = (functionName) => {
   const functionNameWithoutType = functionName
     .replace(FUNCTION_TYPES.SELECTOR, '');
-  const capitalisedFunctionName = capitaliseWord(functionNameWithoutType);
+  const getFunctionName =  `get${capitaliseWord(functionNameWithoutType)}`;
   return (
     `import { createSelector } from 'reselect';
 import { get } from 'lodash';
@@ -15,7 +15,7 @@ import { get } from 'lodash';
  * @param {{}} state - the redux state
  * @returns {*} the selected param
  */
-export const get${capitalisedFunctionName} = state => get(
+export const ${getFunctionName} = state => get(
   state,
   'dummyParam',
   '',
@@ -25,8 +25,8 @@ export const get${capitalisedFunctionName} = state => get(
  * A description explaining what data we are getting and where we are using it.
  */
 export const ${functionName} = createSelector(
-  get${capitalisedFunctionName},
-  ${capitalisedFunctionName} => ${capitalisedFunctionName},
+  ${getFunctionName},
+  ${functionNameWithoutType} => ${functionNameWithoutType},
 );
 `
   );
